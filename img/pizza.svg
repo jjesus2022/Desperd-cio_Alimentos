@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .label{font: 700 22px sans-serif; fill:#e9eef2}
+      .title{font:700 32px sans-serif; fill:#f5f5f5}
+      .sub{font:400 18px sans-serif; fill:#d2dce6}
+    </style>
+  </defs>
+  <circle cx="400" cy="400" r="360" fill="#202838"/>
+  <!-- 60% -->
+  <path d="M400,400 L400,40 A360,360 0 0,1 740,400 Z" fill="#2ecc71"/>
+  <!-- 28% -->
+  <path d="M400,400 L740,400 A360,360 0 0,1 240,640 Z" fill="#3498db"/>
+  <!-- 12% -->
+  <path d="M400,400 L240,640 A360,360 0 0,1 400,40 Z" fill="#f1c40f"/>
+  <!-- donut center -->
+  <circle cx="400" cy="400" r="180" fill="#202838"/>
+  <text x="400" y="390" text-anchor="middle" class="title">Distribuição do desperdício</text>
+  <text x="400" y="420" text-anchor="middle" class="sub">Lares 60% • Food service 28% • Varejo 12%</text>
+</svg>

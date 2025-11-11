@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <style>
+      .axis{stroke:#c8d2dc; stroke-width:2}
+      .bar-br{fill:#2ecc71}
+      .bar-wo{fill:#3498db}
+      .label{font:700 22px sans-serif; fill:#e9eef2}
+      .title{font:700 32px sans-serif; fill:#f5f5f5}
+      .sub{font:400 18px sans-serif; fill:#d2dce6}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1200" height="700" fill="#202838"/>
+  <line x1="120" y1="120" x2="120" y2="580" class="axis"/>
+  <line x1="120" y1="580" x2="1100" y2="580" class="axis"/>
+  <!-- Scale: 1050M -> height 400 -->
+  <!-- Brasil baixo 27M -->
+  <rect x="200" y="580" width="180" height="0" fill="none"/>
+  <rect x="200" y="580" width="180" height="-10" fill="none"/>
+  <rect x="200" y="580" width="180" height="-10" fill="none"/>
+  <rect x="200" y="570" width="180" height="10" class="bar-br"/>
+  <text x="290" y="570 - 20" text-anchor="middle" class="label">27 mi t</text>
+  <text x="290" y="620" text-anchor="middle" class="sub">Brasil (baixo)</text>
+  <!-- Brasil alto 46M -->
+  <rect x="520" y="563" width="180" height="17" class="bar-br"/>
+  <text x="610" y="563 - 20" text-anchor="middle" class="label">46 mi t</text>
+  <text x="610" y="620" text-anchor="middle" class="sub">Brasil (alto)</text>
+  <!-- Mundo 1050M -->
+  <rect x="840" y="180" width="180" height="400" class="bar-wo"/>
+  <text x="930" y="160" text-anchor="middle" class="label">1.050 mi t</text>
+  <text x="930" y="620" text-anchor="middle" class="sub">Mundo</text>
+  <text x="600" y="60" text-anchor="middle" class="title">Comparativo — Brasil e Mundo</text>
+  <text x="600" y="92" text-anchor="middle" class="sub">Faixa de estimativas (Brasil) e total global (PNUMA 2024; G1/CNN/IBGE)</text>
+</svg>
