@@ -1,28 +1,28 @@
-
 # Mini site: Desperdício de Alimentos
 
-Site estático em **HTML/CSS/JS** com dados atuais (PNUMA/ONU, FAO) e seção de **iniciativas locais de Frutal/MG**.
-
-## Estrutura
-- `index.html` — conteúdo principal (estatísticas, dicas, calculadora e iniciativas locais)
-- `styles.css` — estilos com paleta escura acessível
-- `script.js` — calculadora simples de economia
-- `hero.jpg` — imagem de capa (placeholder)
+Inclui:
+- Banner com estatísticas
+- SEO + OG tags
+- Favicon
+- Contador de visitas
+- Mapa de doação
+- Botão fixo "Doar Agora" na navbar
+- Scroll suave até seção de doação
 
 ## Publicar
-### GitHub Pages
-1. Crie um repositório no GitHub: `desperdicio-alimentos`.
-2. Envie estes arquivos para a **raiz** do repositório (branch `main`).
-3. Vá em **Settings → Pages** e selecione:
-   - **Source**: `Deploy from a branch`
-   - **Branch**: `main` / **Folder**: `/` (root)
-4. Salve. A página estará disponível em `https://SEU_USUARIO.github.io/desperdicio-alimentos/`.
+1. Suba todos os arquivos na raiz do repositório.
+2. Ative GitHub Pages em Settings → Pages.
+3. URL: https://SEU_USUARIO.github.io/Desperd-cio_Alimentos/
 
-### Netlify
-1. Acesse [https://app.netlify.com/](https://app.netlify.com/) e crie uma conta.
-2. Clique em **Add new site → Deploy manually**.
-3. **Arraste e solte** a pasta (ou o `.zip`) do projeto.
-4. Após o deploy, personalize o domínio em **Site configuration → Domain management**.
 
-## Licença
-Conteúdo textual gerado para fins educativos. As estatísticas citadas referem-se ao **Food Waste Index Report 2024 (PNUMA/ONU)** e materiais da **FAO/PNUMA**.
+## Voluntariado — como receber as inscrições
+- **Netlify**: mantenha o formulário como está. Publique o site no Netlify e acesse o menu **Forms** para ver os envios.
+- **GitHub Pages**: abra `script.js` e substitua `SEU_EMAIL_AQUI` pelo seu e-mail. O envio abrirá seu app de e-mail com os dados preenchidos.
+
+## Formulário (Formspree)
+1. Crie uma conta em formspree.io e gere um formulário **(Free)**.
+2. Você receberá um endpoint no formato: `https://formspree.io/f/XXXXX`.
+3. Abra `index.html` e **substitua** `REPLACE_FORM_ID` pelo ID do seu formulário.
+4. Publicado no GitHub Pages, o envio ocorrerá via AJAX e exibirá uma mensagem de sucesso/erro na página.
+
+> Observação: o fallback por e-mail no `script.js` permanece ativo apenas se você **não** definir um endpoint do Formspree.
