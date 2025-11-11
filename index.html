@@ -1,23 +1,53 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><title>Desperdício de Alimentos</title>
-
-  
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desperdício de Alimentos</title>
+  <meta name="description" content="Dados atualizados sobre desperdício de alimentos, dicas práticas para reduzir o descarte e iniciativas locais em Frutal/MG."/>
   <link rel="canonical" href="https://jjesus2022.github.io/Desperd-cio_Alimentos/" />
-  <meta property="og:image" content="https://jjesus2022.github.io/Desperd-cio_Alimentos/hero.jpg" />
-  <meta property="og:image:width" content="1600" />
-  <meta property="og:image:height" content="900" />
-<meta name="description" content="Dados atualizados sobre desperdício de alimentos, dicas práticas e iniciativas locais em Frutal/MG."/>
-  <meta name="theme-color" content="#22c55e" />
-  <link rel="icon" href="/favicon.png" sizes="any" type="image/png" />
+  <!-- Favicon com caminho relativo (Project Pages) -->
+  <link rel="icon" href="./favicon.png" sizes="any" type="image/png" />
+  <!-- Open Graph para redes (absoluto recomendado) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Desperdício de Alimentos: dados, dicas e iniciativas (Frutal/MG)" />
   <meta property="og:description" content="1,05 bilhão de toneladas desperdiçadas no mundo (2022). Veja como reduzir o desperdício em casa e conhecer iniciativas locais." />
-  <meta property="og:image" content="hero.jpg" />
+  <meta property="og:image" content="https://jjesus2022.github.io/Desperd-cio_Alimentos/hero.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
   <meta property="og:url" content="https://jjesus2022.github.io/Desperd-cio_Alimentos/" />
   <meta name="twitter:card" content="summary_large_image" />
-<link rel="stylesheet" href="styles.css"></head><body><header class="hero"><div class="hero__overlay"></div><div class="hero__content"><h1>Desperdício de Alimentos</h1><p>Informação, impacto e dicas práticas para reduzir o desperdício no dia a dia.</p><a href="#dicas" class="btn" aria-label="Ir para dicas">Começar pelas dicas</a></div></header><main><section id="dicas" class="container section"><h2>Dicas práticas para reduzir o desperdício</h2><ul class="tips"><li>Planeje suas compras.</li></ul></section>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1>Desperdício de Alimentos</h1>
+      <p>Informação, impacto e dicas práticas para reduzir o desperdício no dia a dia.</p>
+      <a href="#dicas" class="btn" aria-label="Ir para dicas">Começar pelas dicas</a>
+    </div>
+    <!-- Fallback opcional; remova display:none para depurar -->
+    <img src="./hero.jpg" alt="Banner com estatísticas sobre desperdício de alimentos" style="display:none" />
+  </header>
+
+  <main>
+    <section id="dados" class="container section">
+      <h2>Por que isso importa?</h2>
+      <p>Dados e fontes oficiais (PNUMA/ONU, FAO) embasam o conteúdo.</p>
+    </section>
+
+    <section id="dicas" class="container section">
+      <h2>Dicas práticas para reduzir o desperdício</h2>
+      <ul class="tips">
+        <li><strong>Planeje compras e porções</strong> para evitar excesso.</li>
+        <li><strong>Armazene corretamente</strong> e congele o que não será consumido.</li>
+        <li><strong>Aproveite integralmente</strong> cascas, talos e sobras em novas receitas.</li>
+      </ul>
+    </section>
+
     <section id="mapa" class="container section map-section">
       <h2>Mapa de doação – Frutal/MG</h2>
-      <p>Use o mapa abaixo para localizar pontos de referência e eventos onde geralmente ocorrem campanhas de arrecadação. Os botões abrem o Google Maps para traçar rota.</p>
       <div class="map-grid">
         <iframe class="map-frame" title="Mapa de Frutal, MG" src="https://www.google.com/maps?q=Frutal+MG&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="map-list">
@@ -38,23 +68,29 @@
           </article>
         </div>
       </div>
-      <small class="note">*Quer sugerir novos pontos (bancos de alimentos, entidades, feiras)? Envie a identificação e o endereço que eu adiciono ao mapa.</small>
     </section>
+  </main>
 
-  </main><footer class="footer"><p>© 2025</p><div class="counter">
-  <span>Visitas:&nbsp;<span id="visitas_txt">...</span></span>
-  <a href="https://hits.sh/" target="_blank" rel="noopener" aria-label="Contador de visitas"><img src="https://hits.sh/jjesus2022-Desperdicio-Alimentos.svg?style=flat-square&label=visitas&color=22c55e&labelColor=0f172a" alt="Contador de visitas"/></a>
-</div>
-</footer><script src="script.js"></script>
-<script>
-(function(){
-  var el = document.getElementById('visitas_txt');
-  if(!el) return;
-  fetch('https://api.countapi.xyz/hit/jjesus2022/desperdicio-alimentos')
-    .then(function(r){return r.json()})
-    .then(function(data){ el.textContent = (data && data.value)? data.value.toLocaleString('pt-BR') : '—'; })
-    .catch(function(){ el.textContent='—'; });
-})();
-</script>
+  <footer class="footer">
+    <p>© 2025 • Site estático • Ff1915</p>
+    <div class="counter">
+      <span>Visitas:&nbsp;<span id="visitas_txt">...</span></span>
+      <a href="https://hits.sh/" target="_blank" rel="noopener" aria-label="Contador de visitas">
+        <img src="https://hits.sh/jjesus2022-Desperdicio-Alimentos.svg?style=flat-square&label=visitas&color=22c55e&labelColor=0f172a" alt="Contador de visitas"/>
+      </a>
+    </div>
+  </footer>
 
-</body></html>
+  <script>
+    (function(){
+      var el = document.getElementById('visitas_txt');
+      if(!el) return;
+      fetch('https://api.countapi.xyz/hit/jjesus2022/desperdicio-alimentos')
+        .then(function(r){return r.json()})
+        .then(function(data){ el.textContent = (data && data.value)? data.value.toLocaleString('pt-BR') : '—'; })
+        .catch(function(){ el.textContent='—'; });
+    })();
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-console.log("site ready")
+console.log('site pronto');
