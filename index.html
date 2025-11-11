@@ -1,88 +1,44 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8" />
-<title>Desperdício de Alimentos</title>
-<link rel="icon" href="./favicon.png" type="image/png" />
-<meta property="og:image" content="https://jjesus2022.github.io/Desperd-cio_Alimentos/hero.jpg" />
-<link rel="stylesheet" href="./styles.css" />
-</head><body>
-<nav class="navbar">
-      <div class="nav-container">
-        <a href="#" class="logo">Desperdício</a>
-        <a href="#doar" class="nav-donate" aria-label="Ir para doação">Doar Agora</a>
-            <a href="#voluntariado" class="nav-vol" aria-label="Ir para voluntariado">Voluntariar</a>
-      </div>
-    </nav><header class="hero"><div class="hero__overlay"></div><div class="hero__content"><h1>Desperdício de Alimentos</h1><p>Informação, impacto e dicas práticas para reduzir o desperdício.</p><a href="#dicas" class="btn" aria-label="Ir para dicas">Começar pelas dicas</a></div><img src="./hero.jpg" alt="Banner" style="display:none"/></header><main><section id="dicas" class="container section"><h2>Dicas</h2></section>
-    <section id="doar" class="container section">
-      <h2>Faça sua doação</h2>
-      <p>Escolha uma opção segura para contribuir com a redução do desperdício e o combate à fome na região.</p>
-      <div class="donate-grid">
-        <article class="card">
-          <h3>Doar via Sesc Mesa Brasil (PIX)</h3>
-          <p>Programa de segurança alimentar que conecta excedentes a quem precisa. Você pode doar alimentos e/ou contribuir via PIX.</p>
-          <ul>
-            <li><strong>PIX:</strong> <code>mesabrasilpix@sescmg.com.br</code></li>
-            <li><a class="btn" target="_blank" rel="noopener" href="https://mesabrasil.sescmg.com.br/">Abrir site do Mesa Brasil</a></li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Doar para entidades locais</h3>
-          <p>Verifique necessidades de instituições em Frutal/MG (APAE, Casa da Sopa, Asilo Pio XII, entre outras) e entregue diretamente.</p>
-          <a class="btn" target="_blank" rel="noopener" href="https://www.ongsbrasil.com.br/default.asp?Pag=1&Estado=MG&Cidade=Frutal">Ver lista de ONGs</a>
-        </article>
-      </div>
-      <small class="note">*Se você organiza eventos, adote a prática de arrecadar 1kg de alimento na inscrição e destine aos bancos de alimentos/ONGs locais.</small>
-    </section>
-
-  
-    <section id="voluntariado" class="container section">
-      <h2>Seja voluntário(a)</h2>
-      <p>Preencha o formulário para participar como voluntário em campanhas e ações de arrecadação de alimentos em Frutal/MG.</p>
-      <form id="vol-form" name="voluntariado" method="POST" class="vol-form" action="https://formspree.io/f/REPLACE_FORM_ID" method="POST" >
-        <input type="hidden" name="form-name" value="voluntariado" />
-        <p class="hidden"><label>Não preencha: <input name="trap" /></label></p>
-        <div class="grid2">
-          <label>Nome completo*
-            <input type="text" name="nome" required />
-          </label>
-          <label>E-mail*
-            <input type="email" name="email" required />
-          </label>
-        </div>
-        <div class="grid2">
-          <label>Telefone (opcional)
-            <input type="tel" name="telefone" />
-          </label>
-          <label>Disponibilidade*
-            <select name="disponibilidade" required>
-              <option value="">Selecione…</option>
-              <option>Fins de semana</option>
-              <option>Seg–Sex (noite)</option>
-              <option>Seg–Sex (manhã/tarde)</option>
-              <option>Eventos pontuais</option>
-            </select>
-          </label>
-        </div>
-        <label>Habilidades/Interesses
-          <input type="text" name="habilidades" placeholder="ex.: logística, comunicação, cozinha, captação" />
-        </label>
-        <label>Mensagem
-          <textarea name="mensagem" rows="4" placeholder="Conte como gostaria de ajudar"></textarea>
-        </label>
-        <label class="terms"><input type="checkbox" name="termos" required /> Concordo em ser contatado(a) para ações de voluntariado.</label>
-        <div class="actions">
-          <button type="submit" class="btn">Enviar</button>
-          <small class="note">*Se publicar no Netlify, as respostas aparecerão em <em>Forms</em> do painel. Em GitHub Pages, o envio usa fallback por e-mail.</small>
-        </div>
-      
-        <div id="vol-status" class="note" aria-live="polite"></div>
-      </form>
-    </section>
-
-  </main><footer class="footer"><p>© 2025</p></footer><script src="./script.js"></script><script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e){
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-  });
-});
-</script>
-</body></html>
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"/><title>Desperdício de Alimentos</title><link rel="stylesheet" href="./styles.css"/></head><body><header class="hero"><div class="hero__overlay"></div><div class="hero__content"><h1>Desperdício de Alimentos</h1><p>Dados, dicas e iniciativas.</p><a href="#dicas" class="btn">Começar pelas dicas</a></div></header><main><section id="dicas" class="container section"><h2>Dicas</h2></section><section id="estatisticas" class="container section stats">
+<h2>Estatísticas e impactos</h2>
+<div class="grid2">
+  <div>
+    <h3>Mundo</h3>
+    <ul>
+      <li><strong>1,05 bilhão t</strong> em 2022 (<em>132 kg per capita</em>).</li>
+      <li>Distribuição: <strong>Lares 60%</strong> • <strong>Food service 28%</strong> • <strong>Varejo 12%</strong>.</li>
+      <li><strong>8%–10%</strong> das emissões globais de GEE vêm de perdas e desperdício.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Brasil</h3>
+    <ul>
+      <li>Estimativas entre <strong>27–46 milhões t/ano</strong> (varia por fonte/metodologia).</li>
+      <li>Média de <strong>~41 kg por pessoa/ano</strong> em domicílios.</li>
+      <li>Causas: planejamento doméstico, logística e cultura do excesso.</li>
+    </ul>
+  </div>
+</div>
+<div class="fig-grid">
+  <figure>
+    <img src="./img/infografico_pizza.png" alt="Gráfico pizza 60/28/12"/>
+    <figcaption>Distribuição por setor (PNUMA/UNEP, 2024).</figcaption>
+  </figure>
+  <figure>
+    <img src="./img/infografico_brasil_mundo.png" alt="Brasil x Mundo em milhões de toneladas"/>
+    <figcaption>Comparativo: Brasil (faixa) x total mundial.</figcaption>
+  </figure>
+  <figure>
+    <img src="./img/waste_photo.jpg" alt="Imagem ilustrativa de alimentos descartados"/>
+    <figcaption>Imagem ilustrativa de desperdício.</figcaption>
+  </figure>
+</div>
+<details class="refs"><summary>Fontes</summary>
+  <ul>
+    <li>PNUMA/ONU — <a href="https://brasil.un.org/pt-br/264460-%C3%ADndice-de-desperd%C3%ADcio-de-alimentos-2024" target="_blank" rel="noopener">Food Waste Index 2024</a>.</li>
+    <li>G1 — <a href="https://g1.globo.com/df/distrito-federal/noticia/2024/09/29/desperdicio-de-alimentos-voce-sabia-que-cada-brasileiro-joga-fora-em-media-41-kg-de-comida-por-ano.ghtml" target="_blank" rel="noopener">41 kg por pessoa; ~27 mi t/ano</a>.</li>
+    <li>CNN Brasil — <a href="https://www.cnnbrasil.com.br/nacional/brasil-descarta-30-dos-alimentos-produzidos-diz-onu/" target="_blank" rel="noopener">até 46 mi t/ano; 30% da produção</a>.</li>
+    <li>Pacto Contra a Fome — <a href="https://pactocontrafome.org/desperdicio-de-alimentos/" target="_blank" rel="noopener">Causas e impactos</a>.</li>
+  </ul>
+</details>
+</section>
+</main><footer class="footer"><p>© 2025</p><span>Visitas: <span id="visitas_txt">...</span></span></footer><script src="./script.js"></script></body></html>

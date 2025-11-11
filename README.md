@@ -1,28 +1,8 @@
-# Mini site: Desperdício de Alimentos
-
-Inclui:
-- Banner com estatísticas
-- SEO + OG tags
-- Favicon
-- Contador de visitas
-- Mapa de doação
-- Botão fixo "Doar Agora" na navbar
-- Scroll suave até seção de doação
-
-## Publicar
-1. Suba todos os arquivos na raiz do repositório.
-2. Ative GitHub Pages em Settings → Pages.
-3. URL: https://SEU_USUARIO.github.io/Desperd-cio_Alimentos/
+# README
 
 
-## Voluntariado — como receber as inscrições
-- **Netlify**: mantenha o formulário como está. Publique o site no Netlify e acesse o menu **Forms** para ver os envios.
-- **GitHub Pages**: abra `script.js` e substitua `SEU_EMAIL_AQUI` pelo seu e-mail. O envio abrirá seu app de e-mail com os dados preenchidos.
-
-## Formulário (Formspree)
-1. Crie uma conta em formspree.io e gere um formulário **(Free)**.
-2. Você receberá um endpoint no formato: `https://formspree.io/f/XXXXX`.
-3. Abra `index.html` e **substitua** `REPLACE_FORM_ID` pelo ID do seu formulário.
-4. Publicado no GitHub Pages, o envio ocorrerá via AJAX e exibirá uma mensagem de sucesso/erro na página.
-
-> Observação: o fallback por e-mail no `script.js` permanece ativo apenas se você **não** definir um endpoint do Formspree.
+## Fontes
+- PNUMA/ONU — Food Waste Index Report 2024: https://brasil.un.org/pt-br/264460-%C3%ADndice-de-desperd%C3%ADcio-de-alimentos-2024
+- G1 — 41 kg por pessoa; ~27 mi t/ano: https://g1.globo.com/df/distrito-federal/noticia/2024/09/29/desperdicio-de-alimentos-voce-sabia-que-cada-brasileiro-joga-fora-em-media-41-kg-de-comida-por-ano.ghtml
+- CNN Brasil — até 46 mi t/ano; 30% da produção: https://www.cnnbrasil.com.br/nacional/brasil-descarta-30-dos-alimentos-produzidos-diz-onu/
+- Pacto Contra a Fome — causas e impactos: https://pactocontrafome.org/desperdicio-de-alimentos/
